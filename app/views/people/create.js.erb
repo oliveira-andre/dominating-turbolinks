@@ -1,0 +1,4 @@
+$('#body_person_table').html("<%= j render 'people/reload_table' %>")
+$('#person_form').replaceWith(
+  "<%= j link_to 'New Person', new_person_path, remote: true, id: 'add_person' %>"
+)

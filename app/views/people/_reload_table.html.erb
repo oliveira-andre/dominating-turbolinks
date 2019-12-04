@@ -1,0 +1,7 @@
+<% @people.each do |person| %>
+  <tr>
+    <td><%= person.name %></td>
+    <td><%= person.age %></td>
+    <td><%= link_to 'Destroy', person, method: :delete, remote: true %></td>
+  </tr>
+<% end %>
